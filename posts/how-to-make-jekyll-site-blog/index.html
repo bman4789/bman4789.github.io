@@ -172,7 +172,7 @@
           itemprop="dateModified"
         >May 25, 2020</time>&nbsp;•&nbsp;<span title="Estimated Reading Time">📖📖📖  15 min. read</span>
       </span>
-      <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/./src/posts/2016-09-01-how-to-make-jekyll-site-blog.md">Edit on GitHub</a>
+      <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/main/./src/posts/2016-09-01-how-to-make-jekyll-site-blog.md">Edit on GitHub</a>
     </p>
     <hr />
     <div itemprop="articleBody">
@@ -317,7 +317,7 @@ Next, create a <code>.travis.yml</code> file and include the following:</p>
 <pre class="language-yaml"><code class="language-yaml"><span class="token key atrule">sudo</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><br><span class="token key atrule">language</span><span class="token punctuation">:</span> ruby<br><span class="token key atrule">cache</span><span class="token punctuation">:</span> bundler<br><span class="token key atrule">rvm</span><span class="token punctuation">:</span><br>  <span class="token punctuation">-</span> 2.5.1<br><span class="token key atrule">script</span><span class="token punctuation">:</span><br>  <span class="token punctuation">-</span> bundle exec jekyll build<br>  <span class="token punctuation">-</span> bundle exec htmlproofer ./_site <span class="token punctuation">-</span><span class="token punctuation">-</span>disable<span class="token punctuation">-</span>external <span class="token punctuation">-</span><span class="token punctuation">-</span>assume<span class="token punctuation">-</span>extension<br><span class="token key atrule">env</span><span class="token punctuation">:</span><br>  <span class="token key atrule">global</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> NOKOGIRI_USE_SYSTEM_LIBRARIES=true</code></pre>
 <p>The <code>--disable-external</code> flag disables the checking on 3rd party links. Some websites will block scrapers like the one used in <code>html-proofer</code>, which will cause the check to fail, so this just skips em' all. The <code>--assume-extension</code> flag will assume that an href like <code>/about</code> is the same as <code>about.html</code>.
 For more detailed information, check out the <a href="https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service">Jekyll documentation on continuous integration</a>.</p>
-<p>Update 2018-09-02: I have refactored this to use a <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/Rakefile">Rakefile</a> and tell Travis CI to use that (see the <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/.travis.yml">.travis.yml</a>). I was having problems with html-proofer matching URLs with a hyphen in them, and needed to use the <code>url_swap</code> configuration, which I thought was easier to configure in a Rakefile.</p>
+<p>Update 2018-09-02: I have refactored this to use a <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/20d71bd373df82a1da07280bd8caaf0138479318/Rakefile">Rakefile</a> and tell Travis CI to use that (see the <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/20d71bd373df82a1da07280bd8caaf0138479318/.travis.yml">.travis.yml</a>). I was having problems with html-proofer matching URLs with a hyphen in them, and needed to use the <code>url_swap</code> configuration, which I thought was easier to configure in a Rakefile.</p>
 
     </div>
   </article>
