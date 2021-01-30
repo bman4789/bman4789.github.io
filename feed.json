@@ -1,16 +1,22 @@
 {
-  "version": "https://jsonfeed.org/version/1",
+  "version": "https://jsonfeed.org/version/1.1",
   "title": "Brian Mitchell",
   "home_page_url": "https://brianm.me/",
   "feed_url": "https://brianm.me/feed.json",
   "description": "Blog, projects, &amp; online presence",
   "icon": "https://brianm.me/assets/images/BM-Logo.png",
   "favicon": "https://brianm.me/assets/images/favicon.ico",
+  "language": "en-US",
   "author": {
     "name": "Brian Mitchell",
     "url": "https://brianm.me",
     "avatar": "https://gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=512"
   },
+  "authors": [{
+    "name": "Brian Mitchell",
+    "url": "https://brianm.me",
+    "avatar": "https://gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=512"
+  }],
   "items": [{
       "id": "https://brianm.me/posts/eleventy-redirect-from/",
       "url": "https://brianm.me/posts/eleventy-redirect-from/",
