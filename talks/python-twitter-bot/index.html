@@ -1,116 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44772557-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+<!DOCTYPE html><html lang="en"><head><!-- Global Site Tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-44772557-2"></script><script>window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-44772557-2');
-</script>
-
-<meta charset="utf-8" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-
-    <title>Using Python to Write a Twitter Bot</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css"
-      integrity="sha256-9+Wg2bcNeiOMGXOUNqBdceY2lAH/eCiTDcdzHhHIl48="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/night.min.css"
-      integrity="sha256-djVnjcP0NP5brHSrvt4ZvBMjSJ6EkZE/jYKcR1TvJRY="
-      crossorigin="anonymous"
-    />
-
-    <!-- Theme used for syntax highlighting of code -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/css/zenburn.min.css"
-      integrity="sha256-GN8HsMOOckKB/M7+4WPg3rJkM8nem9eRdTiSgcKLVyA="
-      crossorigin="anonymous"
-    />
-
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement('link');
+  gtag('config', 'UA-44772557-2');</script><meta charset="utf-8"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>Using Python to Write a Twitter Bot</title><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css" integrity="sha256-9+Wg2bcNeiOMGXOUNqBdceY2lAH/eCiTDcdzHhHIl48=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/night.min.css" integrity="sha256-djVnjcP0NP5brHSrvt4ZvBMjSJ6EkZE/jYKcR1TvJRY=" crossorigin="anonymous"><!-- Theme used for syntax highlighting of code --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/css/zenburn.min.css" integrity="sha256-GN8HsMOOckKB/M7+4WPg3rJkM8nem9eRdTiSgcKLVyA=" crossorigin="anonymous"><!-- Printing and PDF exports --><script>var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.type = 'text/css';
       link.href = window.location.search.match(/print-pdf/gi)
         ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/pdf.min.css'
         : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/paper.min.css';
-      document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
-
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js"
-      integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js"
-      integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .twitter-tweet {
+      document.getElementsByTagName('head')[0].appendChild(link);</script><script defer="defer" src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js" integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID" crossorigin="anonymous"></script><script defer="defer" src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js" integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1" crossorigin="anonymous"></script><style>.twitter-tweet {
         margin-left: auto !important;
         margin-right: auto !important;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <h2>Using Python to<br />Write a Twitter Bot</h2>
-          <h3>Brian Mitchell</h3>
-          <h4>
-            <i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a
-              href="https://twitter.com/BrianMitchL"
-              >@BrianMitchL</a
-            >
-          </h4>
-          <h5>
-            Follow along at
-            <a href="https://brianm.me/talks/python-twitter-bot"
-              >https://brianm.me/talks/python-twitter-bot</a
-            >
-          </h5>
-        </section>
-        <section>
-          <section>
-            <h2>What is a Twitter bot?</h2>
-            <p class="fragment">
-              A script that routinely interacts with Twitter
-            </p>
-            <ul>
-              <li class="fragment">Auto-posting Tweets</li>
-              <li class="fragment">Responding to mentions</li>
-              <li class="fragment">
-                Spam following, liking, replying, quoting, retweeting, etc. 🙄
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2>Basic Structure</h2>
-            <pre><code data-trim data-noescape>
+      }</style></head><body><div class="reveal"><div class="slides"><section><h2>Using Python to<br>Write a Twitter Bot</h2><h3>Brian Mitchell</h3><h4><i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a href="https://twitter.com/BrianMitchL">@BrianMitchL</a></h4><h5>Follow along at <a href="https://brianm.me/talks/python-twitter-bot">https://brianm.me/talks/python-twitter-bot</a></h5></section><section><section><h2>What is a Twitter bot?</h2><p class="fragment">A script that routinely interacts with Twitter</p><ul><li class="fragment">Auto-posting Tweets</li><li class="fragment">Responding to mentions</li><li class="fragment">Spam following, liking, replying, quoting, retweeting, etc. 🙄</li></ul></section><section><h2>Basic Structure</h2><pre><code data-trim data-noescape>
                     while True:
                         # implement logic here
 
@@ -119,22 +20,11 @@
                         # post a tweet
 
                         time.sleep(60)
-                </code></pre>
-          </section>
-        </section>
-        <section>
-          <section data-markdown>
-            <script type="text/template">
-              ## weatherBot
+                </code></pre></section></section><section><section data-markdown><script type="text/template">## weatherBot
 
               #### A Twitter bot for weather
 
-              [https://github.com/weatherBot](https://github.com/weatherBot)
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-              * Powered by Dark Sky
+              [https://github.com/weatherBot](https://github.com/weatherBot)</script></section><section data-markdown><script type="text/template">* Powered by Dark Sky
               * Daily forecasts <!-- .element: class="fragment fade-up" -->
               * Scheduled conditions <!-- .element: class="fragment fade-up" -->
               * Special conditions <!-- .element: class="fragment fade-up" -->
@@ -145,70 +35,7 @@
                   * Units
                   * Custom text in a YAML file
                   * Logging
-                  * Throttle durations
-            </script>
-          </section>
-          <section>
-            <blockquote class="twitter-tweet" data-lang="en">
-              <p lang="en" dir="ltr">
-                St Paul, MN: The clouds are saying hi, it&#39;s foggy right now.
-              </p>
-              &mdash; Weather By Brian (@WeatherByBrian)
-              <a
-                href="https://twitter.com/WeatherByBrian/status/823466381744205824"
-                >January 23, 2017</a
-              >
-            </blockquote>
-            <script
-              async
-              src="//platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-
-            <blockquote class="twitter-tweet" data-lang="en">
-              <p lang="en" dir="ltr">
-                Eden Prairie, MN: The forecast for today is mostly cloudy
-                starting in the evening. 21ºF/2ºF. Sweet!
-              </p>
-              &mdash; Weather By Brian (@WeatherByBrian)
-              <a
-                href="https://twitter.com/WeatherByBrian/status/829661514923642880"
-                >February 9, 2017</a
-              >
-            </blockquote>
-            <script
-              async
-              src="//platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-
-            <blockquote class="twitter-tweet" data-lang="en">
-              <p lang="en" dir="ltr">
-                Minneapolis, MN: Get ready, there&#39;s a Freezing Rain Advisory
-                until Tue, Feb 07 at 12:00:00 CST.
-                <a href="https://t.co/OtpCQ26e3d">https://t.co/OtpCQ26e3d</a>
-              </p>
-              &mdash; Weather By Brian (@WeatherByBrian)
-              <a
-                href="https://twitter.com/WeatherByBrian/status/828803766296117248"
-                >February 7, 2017</a
-              >
-            </blockquote>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Location</h2>
-
-            <p>Static or dynamic</p>
-
-            <p class="fragment fade-up">Twitter has geolocation data...</p>
-            <aside class="notes">
-              How can we consume the Twitter API?
-            </aside>
-          </section>
-          <section>
-            <pre class="stretch"><code data-trim data-noescape>
+                  * Throttle durations</script></section><section><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">St Paul, MN: The clouds are saying hi, it&#39;s foggy right now.</p>&mdash; Weather By Brian (@WeatherByBrian) <a href="https://twitter.com/WeatherByBrian/status/823466381744205824">January 23, 2017</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Eden Prairie, MN: The forecast for today is mostly cloudy starting in the evening. 21ºF/2ºF. Sweet!</p>&mdash; Weather By Brian (@WeatherByBrian) <a href="https://twitter.com/WeatherByBrian/status/829661514923642880">February 9, 2017</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Minneapolis, MN: Get ready, there&#39;s a Freezing Rain Advisory until Tue, Feb 07 at 12:00:00 CST. <a href="https://t.co/OtpCQ26e3d">https://t.co/OtpCQ26e3d</a></p>&mdash; Weather By Brian (@WeatherByBrian) <a href="https://twitter.com/WeatherByBrian/status/828803766296117248">February 7, 2017</a></blockquote></section></section><section><section><h2>Location</h2><p>Static or dynamic</p><p class="fragment fade-up">Twitter has geolocation data...</p><aside class="notes">How can we consume the Twitter API?</aside></section><section><pre class="stretch"><code data-trim data-noescape>
                     def get_location_from_user_timeline(username, fallback):
                         """
                         Load the 20 most recent tweets of a given twitter handle and
@@ -259,30 +86,15 @@
                             logging.warning('Could not find tweet with location, '
                                             'falling back to hardcoded location')
                             return fallback
-                </code></pre>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-              ### So we have our location, now what?
+                </code></pre></section><section data-markdown><script type="text/template">### So we have our location, now what?
 
-              More than I have time to talk about in detail... <!-- .element: class="fragment fade-up" -->
-            </script>
-          </section>
-          <section data-markdown>
-            <script type="text/template">
-              * Get weather data for the location
+              More than I have time to talk about in detail... <!-- .element: class="fragment fade-up" --></script></section><section data-markdown><script type="text/template">* Get weather data for the location
               * Create WeatherData object <!-- .element: class="fragment fade-up" -->
               * Load cache <!-- .element: class="fragment fade-up" -->
               * Check for weather alerts <!-- .element: class="fragment fade-up" -->
               * Tweet a forecast or normal condition <!-- .element: class="fragment fade-up" -->
               * Check for special conditions <!-- .element: class="fragment fade-up" -->
-                  * Cache timestamp to throttle the frequency
-            </script>
-          </section>
-        </section>
-        <section>
-          <h3>What if it Crashes?</h3>
-          <pre class="stretch"><code data-trim data-noescape>
+                  * Cache timestamp to throttle the frequency</script></section></section><section><h3>What if it Crashes?</h3><pre class="stretch"><code data-trim data-noescape>
                 import traceback
                 ...
                 try:
@@ -296,51 +108,9 @@
                         api.send_direct_message(screen_name=api.me().screen_name,
                                                 text=str(random.randint(0, 9999))
                                                      + traceback.format_exc())
-            </code></pre>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ## Twitter Bot:
+            </code></pre></section><section data-markdown><script type="text/template">## Twitter Bot:
 
-            Automated use of Twitter to post or interact with other users
-          </script>
-        </section>
-        <section>
-          <h2>Questions?</h2>
-          <h2>
-            <i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a
-              href="https://twitter.com/BrianMitchL"
-              >@BrianMitchL</a
-            >
-          </h2>
-          <h3>
-            <i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a
-              href="https://twitter.com/WeatherByBrian"
-              >@WeatherByBrian</a
-            >
-          </h3>
-          <h5>
-            Submit a pull request or feature suggestion!<br /><a
-              href="https://github.com/BrianMitchL/weatherBot"
-              >https://github.com/BrianMitchL/weatherBot</a
-            >
-          </h5>
-          <p><small>I also would love some code review 🙃</small></p>
-        </section>
-      </div>
-    </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"
-      integrity="sha256-CTcwyen1cxIrm4hlqdxe0y7Hq6B0rpxAKLiXMD3dJv0="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.min.js"
-      integrity="sha256-Xr6ZH+/kc7hDVReZLO5khBknteLqu5oen/xnSraXrVk="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      Reveal.initialize({
+            Automated use of Twitter to post or interact with other users</script></section><section><h2>Questions?</h2><h2><i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a href="https://twitter.com/BrianMitchL">@BrianMitchL</a></h2><h3><i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a href="https://twitter.com/WeatherByBrian">@WeatherByBrian</a></h3><h5>Submit a pull request or feature suggestion!<br><a href="https://github.com/BrianMitchL/weatherBot">https://github.com/BrianMitchL/weatherBot</a></h5><p><small>I also would love some code review 🙃</small></p></section></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js" integrity="sha256-CTcwyen1cxIrm4hlqdxe0y7Hq6B0rpxAKLiXMD3dJv0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.min.js" integrity="sha256-Xr6ZH+/kc7hDVReZLO5khBknteLqu5oen/xnSraXrVk=" crossorigin="anonymous"></script><script>Reveal.initialize({
         controls: true,
         progress: true,
         history: true,
@@ -391,7 +161,4 @@
             async: true
           }
         ]
-      });
-    </script>
-  </body>
-</html>
+      });</script></body></html>
