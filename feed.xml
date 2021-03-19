@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="https://www.11ty.dev" version="0.11.1">Eleventy</generator>
+  <generator uri="https://www.11ty.dev" version="0.12.1">Eleventy</generator>
   <title>Brian Mitchell</title>
   <subtitle>Blog, projects, &amp; online presence</subtitle>
   <link href="https://brianm.me/feed.xml" rel="self" type="application/atom+xml" />
