@@ -5,11 +5,46 @@
   <subtitle>Blog, projects, &amp; online presence</subtitle>
   <link href="https://brianm.me/feed.xml" rel="self" type="application/atom+xml" />
   <link href="https://brianm.me/" rel="alternate" type="text/html" />
-  <updated>2021-01-22T00:00:00Z</updated>
+  <updated>2021-05-02T00:00:00Z</updated>
   <id>https://brianm.me/</id>
   <author>
     <name>Brian Mitchell</name>
   </author>
+    
+    <entry>
+      <title>Headshot Photo Setup</title>
+      <link href="https://brianm.me/posts/headshot-photo-setup/" rel="alternate"
+            type="text/html" title="Headshot Photo Setup"/>
+      <published>2021-05-02T00:00:00Z</published>
+      <updated>2021-05-02T00:00:00Z</updated>
+      <id>https://brianm.me/posts/headshot-photo-setup/</id>
+      <summary type="html">An overview on how I took a headshot photo in the living room of my apartment.</summary>
+      <content type="html" xml:base="https://brianm.me/posts/headshot-photo-setup/">&lt;p&gt;My good friend &lt;a href=&quot;https://ryanrampersad.com/&quot;&gt;Ryan&lt;/a&gt; recently asked me to document what I did to take my new headshot photo, so here we go! I&#39;m hardly even a hobbyist photographer, so don&#39;t trust everything I say here, I was just winging it.&lt;/p&gt;
+&lt;p&gt;A month ago I had a week off between jobs, and my &lt;a href=&quot;https://twitter.com/BrianMitchL/status/1144996337202548737?s=20&quot;&gt;old profile photo&lt;/a&gt; was feeling outdated. I spent an afternoon setting up some resemblance of a portrait/headshot studio with my iPhone in a tripod.&lt;/p&gt;
+&lt;h2 id=&quot;the-setup&quot;&gt;The Setup &lt;a class=&quot;heading-link&quot; href=&quot;https://brianm.me/posts/headshot-photo-setup/#the-setup&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Permalink&lt;/span&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I&#39;m no photographer, but what I&#39;ve learned from various forms of theatrical and event lighting over the last 15 years is that lighting is everything. I was going for a more colorful and moody look, so I made sure to use lights that could change color.&lt;/p&gt;
+&lt;p&gt;I closed the window blinds in my apartment to try to have more control over the lighting. I used an RGB HomeKit light with its lampshade removed for my accent/saturated red/orange light, a small RGB ring light set to a dark blue, and a dimmable white HomeKit light (with a piece of paper in front of it for some diffusion) for a bit of a fill. This created a nice blue-to-red gradient split on each side of my face, and mixed to a nice lavender on my cream-colored wall behind me.&lt;/p&gt;
+&lt;p&gt;I knelt on a pillow and used my Apple Watch camera app to preview what my iPhone saw from a tripod, then hit a 3-second timer and smiled at the camera. I took photos for a little over an hour, playing the location, color, and brightness of the lights. In typical fashion, my favorite photo was one of the first I took!&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-conversation=&quot;none&quot; data-dnt=&quot;true&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Janky but effective! &lt;a href=&quot;https://t.co/G7r3h2iEHQ&quot;&gt;pic.twitter.com/G7r3h2iEHQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Brian Mitchell (@BrianMitchL) &lt;a href=&quot;https://twitter.com/BrianMitchL/status/1379909835643215872?ref_src=twsrc%5Etfw&quot;&gt;April 7, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;h2 id=&quot;post-processing&quot;&gt;Post Processing &lt;a class=&quot;heading-link&quot; href=&quot;https://brianm.me/posts/headshot-photo-setup/#post-processing&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Permalink&lt;/span&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;All I really did was some cropping and rotation for better framing, and clicked &amp;quot;Auto&amp;quot; in the Apple Photos app &lt;span aria-label=&quot;shrug&quot; class=&quot;emoji&quot; role=&quot;img&quot;&gt;🤷🏻‍♂️&lt;/span&gt;. I tweaked the automatic edits a little; it&#39;s mostly composed of a pretty strong white balance adjustment, various adjustments to the lighting (brilliance, exposure, highlights, shadows, brightness, contrast, and black point), and a tiny bit of color adjustment.&lt;/p&gt;
+&lt;div class=&quot;grid-thumbs&quot;&gt;
+  &lt;figure&gt;
+    &lt;img loading=&quot;lazy&quot; src=&quot;https://cdn.brianm.me/images/posts/headshot-photo-setup/headshot.jpg&quot; alt=&quot;Edited headshot&quot; /&gt;
+    &lt;figcaption&gt;Final Edit&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure&gt;
+    &lt;img loading=&quot;lazy&quot; src=&quot;https://cdn.brianm.me/images/posts/headshot-photo-setup/headshot-raw.jpg&quot; alt=&quot;unedited headshot&quot; /&gt;
+    &lt;figcaption&gt;No lighting or color edits&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;what-i&#39;d-do-different&quot;&gt;What I&#39;d Do Different &lt;a class=&quot;heading-link&quot; href=&quot;https://brianm.me/posts/headshot-photo-setup/#what-i&#39;d-do-different&quot;&gt;&lt;span class=&quot;sr-only&quot;&gt;Permalink&lt;/span&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I don&#39;t think my face is lit bright enough. I would have liked to add some soft white light to separate my face from the background better. I did use a white lamp with some paper to diffuse it, which helped some, but also created lots of shadows on the wall behind me, which I fought with for quite a while. I think having more space to separate the lights would help soften shadows.&lt;/p&gt;
+&lt;p&gt;I liked the moodiness and saturated colors of the unedited photo, but it&#39;s also probably easier to quick glance at a photo of a face when the main color is more normal. I cranked the white balance way back towards the blues to neutralize the color on my face, but that resulted in some green shadows (ew) and probably some loss in quality from such a large change.&lt;/p&gt;
+&lt;p&gt;I might try forgoing the iPhone Portrait mode and instead shoot with a 3rd party app like &lt;a href=&quot;https://halide.cam/&quot;&gt;Halide&lt;/a&gt; in order to have a &lt;a href=&quot;https://en.wikipedia.org/wiki/Raw_image_format&quot;&gt;RAW image&lt;/a&gt; that will be less destructive in quality when doing post-processing.&lt;/p&gt;
+&lt;p&gt;Maybe next time I&#39;ll hire a real photographer!&lt;/p&gt;
+</content>
+    </entry>
     
     <entry>
       <title>Eleventy Redirect From</title>
@@ -622,7 +657,7 @@ and connections to other places in Minneapolis and Saint Paul.
 As the year went on, I outfitted the apartment with HomeKit LED lights. I have two
 in my bedroom, and a combination of two outlets and an LED strip in my living room.
 It&#39;s very colorful and fun. For the ultimate hands-free (lazy?) life, I have them
-set up to automatically turn on or off if I arrive or leave home, respectively :grin:.&lt;/p&gt;
+set up to automatically turn on or off if I arrive or leave home, respectively &lt;span aria-label=&quot;grin&quot; class=&quot;emoji&quot; role=&quot;img&quot;&gt;😁&lt;/span&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;I started working with &lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; and
@@ -1076,24 +1111,6 @@ looking for a new, fast, and stable Mac.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</content>
-    </entry>
-    
-    <entry>
-      <title>Charlie the Hubot</title>
-      <link href="https://brianm.me/posts/charlie-the-hubot/" rel="alternate"
-            type="text/html" title="Charlie the Hubot"/>
-      <published>2018-07-29T00:00:00Z</published>
-      <updated>2018-07-29T00:00:00Z</updated>
-      <id>https://brianm.me/posts/charlie-the-hubot/</id>
-      <summary type="html">Meet Charlie, the hubot I helped build out at my work.</summary>
-      <content type="html" xml:base="https://brianm.me/posts/charlie-the-hubot/">&lt;blockquote&gt;
-&lt;p&gt;How does a hubot instance automate tasks and promote workplace culture? Meet Charlie.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;I&#39;ve really enjoyed working on the hubot instance at C.H. Robinson IT Slack. It&#39;s been fun helping others get involved,
-writing scripts myself, and maintaining the bot.&lt;/p&gt;
-&lt;p&gt;Please read about &lt;a href=&quot;https://engineering.chrobinson.com/culture/our-favorite-coworker/&quot;&gt;Our Favorite Coworker&lt;/a&gt; on the
-C.H. Robinson Engineering Blog!&lt;/p&gt;
 </content>
     </entry>
 </feed>
